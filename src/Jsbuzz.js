@@ -1,6 +1,6 @@
 class Jsbuzz {
     isDivisibleByThree(number) {
-        return true;
+        return(number % 3 === 0);
 
     }
 
