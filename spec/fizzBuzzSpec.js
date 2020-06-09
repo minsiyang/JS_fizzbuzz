@@ -38,4 +38,15 @@ describe('Fizzbuzz', function() {
         expect(fizzBuzz.isDivisibleByFifteen(20, 15)).not.toBe(true);
       });
     });
+
+    describe('number is multiple of 3', function(){
+      it('return "fizz" when passed 3', function(){
+        expect(fizzBuzz.play(3)).toEqual("Fizz");
+      });
+
+      it ('returrn "fizz" when passed 9', function(){
+        expect(fizzBuzz.play(9)).toEqual("Fizz");
+      });
+    });
+
 } );
