@@ -4,25 +4,29 @@ class Fizzbuzz {
 
     }
 
-    isDivisibleByThree(number) {
-        return this._isDivisibleBy(number, 3);
-    }
+    // isDivisibleByThree(number) {
+    //     return this._isDivisibleBy(number, 3);
+    // }
 
-    isDivisibleByFive(number) {
-        return this._isDivisibleBy(number, 5);
-    }
+    // isDivisibleByFive(number) {
+    //     return this._isDivisibleBy(number, 5);
+    // }
 
-    isDivisibleByFifteen(number) {
-        return this._isDivisibleBy(number, 15);
-    }
+    // isDivisibleByFifteen(number) {
+    //     return this._isDivisibleBy(number, 15);
+    // }
 
     play(number) {
-      if (this.isDivisibleByThree(number, 3)){
-       return "Fizz";
-     };
-      if (this.isDivisibleByFive(number, 5)){
-       return "Buzz";
-     };
-    };
+      if (this._isDivisibleBy(number, 15)){
+        return "FizzBuzz";
+     }  
+      if (this._isDivisibleBy(number, 3)){
+        return "Fizz";
+     }
+      if (this._isDivisibleBy(number, 5)){
+        return "Buzz";
+     }
+      return number
+    }
 
 }
