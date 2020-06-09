@@ -1,6 +1,6 @@
 
 describe('Fizzbuzz', function() {
-    var fizzbuzz;
+    var fizzBuzz;
     beforeEach(function(){
       fizzBuzz = new Fizzbuzz();
     });
@@ -44,8 +44,14 @@ describe('Fizzbuzz', function() {
         expect(fizzBuzz.play(3)).toEqual("Fizz");
       });
 
-      it ('returrn "fizz" when passed 9', function(){
+      it ('return "fizz" when passed 9', function(){
         expect(fizzBuzz.play(9)).toEqual("Fizz");
+      });
+    });
+
+    describe('number is multiple of 5', function(){
+      it('return "Buzz" when passed 5', function(){
+        expect(fizzBuzz.play(5)).toEqual("Buzz");
       });
     });
 

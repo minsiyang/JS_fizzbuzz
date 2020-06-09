@@ -17,8 +17,11 @@ class Fizzbuzz {
     }
 
     play(number) {
-     if (this.isDivisibleByThree(number, 3)) {
-       return "Fizz"
+      if (this.isDivisibleByThree(number, 3)){
+       return "Fizz";
+     };
+      if (this.isDivisibleByFive(number, 5)){
+       return "Buzz";
      };
     };
 
